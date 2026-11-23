@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connected – Haider Auto Poster</title><style>body{font-family:system-ui,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}h1{font-size:28px}h2{font-size:20px;margin-top:28px}nav a{margin-right:16px}footer{margin-top:40px;font-size:13px;color:#777}code{background:#f2f2f2;padding:4px 8px;border-radius:4px;word-break:break-all}</style></head><body><nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>TikTok connection</h1><div id="out">Reading response…</div>
+<script>
+var p=new URLSearchParams(location.search),o=document.getElementById('out');
+if(p.get('code')){o.innerHTML='<p>✅ TikTok approved access. Copy this code and give it to the bot:</p><p><code>'+p.get('code').replace(/</g,'&lt;')+'</code></p><p>The code expires in a few minutes, so use it right away.</p>';}
+else if(p.get('error')){o.innerHTML='<p>❌ Connection failed: '+(p.get('error_description')||p.get('error')).replace(/</g,'&lt;')+'</p>';}
+else{o.innerHTML='<p>This page receives the TikTok sign-in response.</p>';}
+</script>
+<footer>© 2026 Haider Auto Poster · Contact: haiiderrali.222@gmail.com</footer></body></html>

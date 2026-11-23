@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect TikTok – Haider Auto Poster</title><style>body{font-family:system-ui,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}h1{font-size:28px}h2{font-size:20px;margin-top:28px}nav a{margin-right:16px}footer{margin-top:40px;font-size:13px;color:#777}code{background:#f2f2f2;padding:4px 8px;border-radius:4px;word-break:break-all}</style>
+<style>.btn{display:inline-block;background:#fe2c55;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:16px}.box{border:1px solid #ddd;border-radius:10px;padding:18px;margin:18px 0}</style></head><body><nav><a href="index.html">Home</a><a href="connect.html">Connect TikTok</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Connect your TikTok account</h1>
+<div class="box"><p><b>Step 1.</b> Click the button and sign in to TikTok. Approve these permissions:</p>
+<ul><li><b>user.info.basic</b> – show your display name and avatar so you can confirm the right account</li>
+<li><b>video.upload</b> – send your new videos to your TikTok inbox as drafts</li>
+<li><b>video.publish</b> – post your new videos to your profile with the settings you choose</li></ul>
+<button class="btn" id="go">Connect TikTok</button></div>
+<div class="box"><p><b>Step 2.</b> After approving, you'll see a connection code. The Haider Auto Poster server uses it to finish connecting your account.</p>
+<p><b>Step 3.</b> When the creator publishes a new video, it's sent to your TikTok account automatically. You can disconnect at any time in TikTok: Settings → Security → Manage app permissions.</p></div>
+<script>
+var CLIENT_KEY="PASTE_SANDBOX_CLIENT_KEY";
+var REDIRECT="https://haiiderrali222-beep.github.io/callback.html";
+document.getElementById('go').onclick=function(){
+ var s=Math.random().toString(36).slice(2);try{sessionStorage.setItem('st',s)}catch(e){}
+ location.href="https://www.tiktok.com/v2/auth/authorize/?client_key="+encodeURIComponent(CLIENT_KEY)+"&scope=user.info.basic,video.upload,video.publish&response_type=code&redirect_uri="+encodeURIComponent(REDIRECT)+"&state="+s;};
+</script>
+<footer>© 2026 Haider Auto Poster · Contact: haiiderrali.222@gmail.com</footer></body></html>
